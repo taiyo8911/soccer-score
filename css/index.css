@@ -1,0 +1,64 @@
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    font-size: 16px;
+}
+
+#result {
+    border: solid 2px orange;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+#result td {
+    border: 1px solid #333;
+    border: dashed 1px orange;
+}
+
+#result th {
+    color: #FF9800;
+    background: #fff5e5;
+    border: 1px solid #333;
+    border: dashed 1px orange;
+}
+
+.submit {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.submit input {
+    background-color: pink;
+    border-radius: 10px;
+    border: 1px solid palevioletred;
+    width: max-content;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.item {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+img {
+    width: 80%;
+}

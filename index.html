@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <title>ワールドカップ星取表シミュレータ</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>ワールドカップ星取表シミュレータ</h1>
+            <p>ワールドカップのグループリーグの試合結果を入力するとスコアを表示するアプリです。<br>すべての項目を入力して「結果を表示する」ボタンを押してください。<br>項目を修正して再度ボタンを押すと、再計算できます。<br>入力に誤りがあると表示されませんのでご注意ください。</p>
+            <a href="example.html">入力例を見る</a>
+            <p class="item">チーム名入力</p>
+            <form name="team" onsubmit="return false;">
+                <table>
+                    <tr>
+                        <td><input name="team" type="text" placeholder="スペイン" required></td>
+                        <td><input name="team" type="text" placeholder="コスタリカ" required></td>
+                        <td><input name="team" type="text" placeholder="ドイツ" required></td>
+                        <td><input name="team" type="text" placeholder="日本" required></td>
+                    </tr>
+                </table>
+            </form>
+
+            <p class="item">試合情報入力</p>
+            <form onsubmit="return false;" required>
+                <table>
+                    <tr>
+                        <th>チームA</th>
+                        <th>チームB</th>
+                        <th>A得点</th>
+                        <th>B得点</th>
+                    </tr>
+                    <tr>
+                        <td><input name="score" id="input1" type="text" placeholder="ドイツ" required></td>
+                        <td><input name="score" id="input2" type="text" placeholder="日本" required></td>
+                        <td><input name="score" id="input3" type="number" min="0" required></td>
+                        <td><input name="score" id="input4" type="number" min="0" required></td>
+                    </tr>
+                    <tr>
+                        <td><input name="score" id="input5" type="text" placeholder="スペイン" required></td>
+                        <td><input name="score" id="input6" type="text" placeholder="コスタリカ" required></td>
+                        <td><input name="score" id="input7" type="number" min="0" required></td>
+                        <td><input name="score" id="input8" type="number" min="0" required></td>
+                    </tr>
+                    <tr>
+                        <td><input name="score" id="input1" type="text" placeholder="日本" required></td>
+                        <td><input name="score" id="input2" type="text" placeholder="コスタリカ" required></td>
+                        <td><input name="score" id="input3" type="number" min="0" required></td>
+                        <td><input name="score" id="input4" type="number" min="0" required></td>
+                    </tr>
+                    <tr>
+                        <td><input name="score" id="input5" type="text" placeholder="スペイン" required></td>
+                        <td><input name="score" id="input6" type="text" placeholder="ドイツ" required></td>
+                        <td><input name="score" id="input7" type="number" min="0" required></td>
+                        <td><input name="score" id="input8" type="number" min="0" required></td>
+                    </tr>
+                    <tr>
+                        <td><input name="score" id="input1" type="text" placeholder="日本" required></td>
+                        <td><input name="score" id="input2" type="text" placeholder="スペイン" required></td>
+                        <td><input name="score" id="input3" type="number" min="0" required></td>
+                        <td><input name="score" id="input4" type="number" min="0" required></td>
+                    </tr>
+                    <tr>
+                        <td><input name="score" id="input5" type="text" placeholder="コスタリカ" required></td>
+                        <td><input name="score" id="input6" type="text" placeholder="ドイツ" required></td>
+                        <td><input name="score" id="input7" type="number" min="0" required></td>
+                        <td><input name="score" id="input8" type="number" min="0" required></td>
+                    </tr>
+                </table>
+
+                <div class="submit">
+                    <input id="calc" type="submit" value="結果を表示する">
+                </div>
+            </form>
+
+
+
+            <table id="result"></table>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
