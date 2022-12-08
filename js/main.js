@@ -188,12 +188,12 @@ const to2Arr = (arr, num) => {
         `<tr>
     <th>チーム</th>
     <th>試</th>
-    <th>得</th>
-    <th>失</th>
-    <th>差</th>
     <th>勝</th>
     <th>分</th>
     <th>負</th>
+    <th>得</th>
+    <th>失</th>
+    <th>差</th>
     <th>勝ち点</th>
     </tr>`;
 
@@ -202,12 +202,12 @@ const to2Arr = (arr, num) => {
             "<tr>" +
             "<td>" + output[i].team + "</td>" +
             "<td>" + output[i].gameCount + "</td>" +
-            "<td>" + output[i].goalPoints + "</td>" +
-            "<td>" + output[i].concedePoints + "</td>" +
-            "<td>" + output[i].goalDifference + "</td>" +
             "<td>" + output[i].winCount + "</td>" +
             "<td>" + output[i].drawCount + "</td>" +
             "<td>" + output[i].loseCount + "</td>" +
+            "<td>" + output[i].goalPoints + "</td>" +
+            "<td>" + output[i].concedePoints + "</td>" +
+            "<td>" + output[i].goalDifference + "</td>" +
             "<td>" + output[i].winningPoints + "</td>" +
             "</tr>";
     }
